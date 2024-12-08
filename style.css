@@ -500,13 +500,19 @@ body {
     height: 48px;
 }
 
-button {
-    transition: ease-in-out 0.1S;
+button:hover {
+    background-color: #1fffff;
+    box-shadow: 0px 0px 5px rgba(0, 255, 255, 0.8), 
+                0px 0px 10px rgba(0, 255, 255, 0.6), 
+                0px 0px 15px rgba(0, 255, 255, 0.4);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
-button:hover{
-    background-color: #1fffff;
-    box-shadow:  0px 4px 8px rgba(0, 204, 204, 0.8);
+button:active{
+    background-color: #a6f9ff;
+    box-shadow: 0px 0px 5px rgba(185, 255, 255, 0.8), 
+                0px 0px 10px rgba(185, 255, 255, 0.6), 
+                0px 0px 15px rgba(185, 255, 255, 0.4);
 }
 
 button:active{
