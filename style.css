@@ -504,7 +504,7 @@ button:hover {
     background-color: #1fffff;
     box-shadow: 0px 0px 5px rgba(0, 255, 255, 0.8), 
                 0px 0px 10px rgba(0, 255, 255, 0.6), 
-                0px 0px 15px rgba(0, 255, 255, 0.4);
+                0px 0px 15px rgba(0, 255, 255, 0.3);
     transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
@@ -512,12 +512,8 @@ button:active{
     background-color: #a6f9ff;
     box-shadow: 0px 0px 5px rgba(185, 255, 255, 0.8), 
                 0px 0px 10px rgba(185, 255, 255, 0.6), 
-                0px 0px 15px rgba(185, 255, 255, 0.4);
-}
-
-button:active{
-    background-color: #a6f9ff;
-    box-shadow: 0 4px 12px rgba(139, 237, 237, 0.8);
+                0px 0px 15px rgba(185, 255, 255, 0.3);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .message-skip:hover{
