@@ -27,8 +27,6 @@ body {
     align-items: center;
 }
 
-
-
 .navbar-title {
     font-size: 42px;
     font-weight: 500;
@@ -107,23 +105,17 @@ body {
 
 .portfolio-grid {
     max-width: 1344px;
-    margin: 0 auto;  
-    padding: 0 0;
-
-}
-
-.portfolio-row {
+    margin: 0 auto;
+    padding: 48px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 48px;
-    padding: 48px 0; 
-    height: auto;  
 }
 
 .portfolio-item {
     display: flex;
     flex-direction: column;
-    gap: 4px; 
+    gap: 4px;
 }
 
 .portfolio-item-image {
@@ -135,28 +127,47 @@ body {
     transition: transform 0.1s linear;
 }
 
-.portfolio-item-title{
+.portfolio-item-title {
     font-weight: 250;
     font-size: 20px;
     line-height: 24px;
-    
 }
 
-.portfolio-item-category{
+.portfolio-item-category {
     font-weight: 200;
     font-size: 17px;
     line-height: 24px;
     color: rgba(209, 235, 235, 0.62);
 }
 
-
-
-
 .portfolio-item-image:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 15px rgba(93, 225, 246, 0.2);
-
     cursor: pointer;
+}
+
+
+@media (max-width: 1400px) {
+    .portfolio-grid {
+        padding: 48px 20px;
+    }
+    
+    .portfolio-item-image {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
 }
 .skills {
     display: flex;
