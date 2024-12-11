@@ -523,6 +523,10 @@ body {
     text-underline-offset: 4px;
 }
 
+.footer-pics img:hover{
+    transform: scale(1.10);
+}
+
 @media (max-width: 1400px) {
     .portfolio-grid {
         padding: 48px 20px;
@@ -561,7 +565,13 @@ body {
     .portfolio-grid{
         grid-template-columns: 1fr;
     }
-
+    .monologue-text{
+        font-size: 32px;
+        line-height: 34px;
+    }
+    .monologue-image{
+        margin-top:48px;
+    }
     .contact-container{
         flex-direction: column;
         text-align: center;
