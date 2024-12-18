@@ -541,27 +541,52 @@ body {
 @media (max-width: 768px) {
     .first-title {
         font-size: 80px;
-        line-height: 60px;
+    }
+
+    .navbar-title{
+        font-size: 35px;
+    }
+
+    .navbar-item{
+        font-size: 20px;
     }
     .portfolio-grid {
         grid-template-columns: repeat(2,1fr);
     }
-    .navbar {
-        flex-direction: column;
+    .main-content,.footer,.monologue,.contact{
+        padding-bottom: 0px;
+        padding-top: 0px;
     }
-    .navbar-menu {
-        flex-direction: column;
+    .monologue-text{
+        font-size: 48px;
+        line-height:50px;
     }
-
+    .contact-header{
+        font-size: 38px;
+    }
+    .contact-text{
+        font-size:24px;
+        line-height: 25px;
+    }
     .message-button{
         width:300px;
-    }
-    .work{
-        padding-top: 200px;
     }
 }
 
 @media (max-width: 425px) {
+
+    .navbar-title{
+        font-size: 25px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .navbar-menu{
+        margin-left: 20px;
+
+    }
+    .navbar-item{
+        font-size: 13px;
+    }
     .portfolio-grid{
         grid-template-columns: 1fr;
     }
@@ -583,14 +608,28 @@ body {
         font-size: 20px;
     }
     .work{
-        padding-top: 100px;
+       padding-top: 0px;
     }
     .first-title{
         font-size:60px;
         line-height:50px;
     }
-    .navbar-menu{
-        gap:10px;
+    .main-content,.footer,.monologue{
+        padding-top: 0px;
     }
-
+    .skills-list{
+        gap:8px;
+    }
+    .skills-item{
+        font-size: 15px;
+    }
+    .navbar-menu{
+        gap:3px;
+    }
+    .footer{
+        padding-bottom: 20px;
+    }
+    .footer-container{
+        gap:24px;
+    }
 }
